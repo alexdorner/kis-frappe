@@ -31,10 +31,7 @@ def create_medical_departments():
 			mediacal_department.save()
 		except frappe.DuplicateEntryError:
 			pass
-def get_medical_departments():
-	mediacal_department = frappe.new_doc("Medical Department")
 
-	return mediacal_department
 
 def create_antibiotics():
 	abt = [
